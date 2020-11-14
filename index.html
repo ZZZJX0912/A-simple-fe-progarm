@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/mdui.css">
+    <link rel="stylesheet" type="text/css" href="css/mdui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mdui.min.css.map">
+    <link rel="stylesheet" type="text/css" href="fonts/roboto/">
+    <link rel="stylesheet" type="text/css" href="icons/material-icons/">
+    <link rel="stylesheet" type="text/css" href="js/mdui.js">
+    <link rel="stylesheet" type="text/css" href="js/mdui.min.js">
+    <link rel="stylesheet" type="text/css" href="js/mdui.min.js.map">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+            <img src="img/uiz1.png" alt="">
+        <ul>
+            <li><a href="#">实战</a></li>
+            <li><a href="#">路径</a></li>
+            <li><a href="#">实战</a></li>
+            <li><a href="#">猿问</a></li>
+            <li><a href="#">手记</a></li>
+        </ul>
+        <div class="header_log">
+            <a href="">注册</a>
+        </div>
+        <div class="header_login">
+            <a href="">登录</a>
+        </div>
+        <div class="_form">
+            <form action="">
+                <input class="text" type="text" placeholder="前端小白       Java入门">    
+                <input class="image" type="image" src="img/uiz4.png" width="13px" height="13px">
+            </form>
+        </div>
+    </header>
+    <!-- 内容区 -->
+    <main class="content">
+        <div class="frontDiv"> 
+            <!-- 轮播图 -->
+            <div class="menuContent" id="menuContent">
+                <a href="#">
+                    <div class="link_box" data-id="a">
+                        <span>前端开发</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_box" data-id="b">
+                        <span>后端开发</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_box" data-id="c">
+                        <span>移动开发</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_box" data-id="d">
+                        <span>数据库</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_box" data-id="e">
+                        <span>云计算&大数据</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_box" data-id="f">
+                        <span>运维和测试</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_box" data-id="g">
+                        <span>UI设计</span><i class="mdui-icon material-icons">&#xe5cc;</i>
+                    </div>
+                </a>
+            </div>
+            <div class="inner_img" id="inner_img">
+                <ul class="inner_ul" id="inner_ul">
+                    <li><img src="img/uiz23.jpg" alt="3"></li>
+                    <li><img src="img/uiz21.jpg" alt="1"></li>
+                    <li><img src="img/uiz22.jpg" alt="2"></li>
+                    <li><img src="img/uiz23.jpg" alt="3"></li>
+                    <li><img src="img/uiz21.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="menuContent_pic">
+                <ul id="Boximg_list">
+                    <li><img src="img/fe.png" alt="前端开发" class="Fe"></li>
+                    <li><img src="img/be.png" alt="后端开发" class="Be"></li>
+                    <li><img src="img/mobileBg.png" alt="移动开发" class="MobileBg"></li>
+                    <li><img src="img/textBg.png" alt="数据库" class="TextBg"></li>
+                    <li><img src="img/bigdataBg.png" alt="云计算&大数据" class="BigdataBg"></li>
+                    <li><img src="img/data.png" alt="运维和测试" class="Data"></li> 
+                    <li><img src="img/photo.png" alt="UI设计" class="Photo"></li>
+                    
+                </ul>
+            </div>
+
+            <i id="frontFlip_left" class="mdui-icon material-icons" style="display: block;font-size: 60px;">&#xe5cb;</i>
+            <i id="frontFlip_right" class="mdui-icon material-icons" style="display: block; font-size: 60px;">&#xe5cc;</i>
+
+        </div>
+        <div class="lang_img">
+            <a href=""><img src="img/path_1.png" alt="web前端攻城狮"></a>
+            <a href=""><img src="img/path_2.png" alt="php攻城狮"></a>
+            <a href=""><img src="img/path_3.png" alt="android攻城狮"></a>
+            <a href=""><img src="img/path_4.png" alt="java攻城狮"></a>
+            <a href=""><img src="img/path_5.png" alt="ios攻城狮"></a>
+        </div>
+        
+        <div class="propaganda">
+            <a href="" class="weiBo"><img src="img/uiz11.png" alt="微博标志" onmouseover="this.src='img/uiz15.png'" onmouseout="this.src='img/uiz11.png'"></a>
+            <a href="" class="weChat" id="wechat"><img src="img/uiz12.png" alt="微信标志" onmouseover="this.src='img/uiz16.png' " onmouseout="this.src='img/uiz12.png'"></a>
+            <a href="" class="qqWeibo"><img src="img/uiz13.png" alt="qq微博标志" onmouseover="this.src='img/uiz17.png'" onmouseout="this.src='img/uiz13.png'"></a>
+            <a href="" class="qqZone"><img src="img/uiz14.png" alt="qq空间标志" onmouseover="this.src='img/uiz18.png'" onmouseout="this.src='img/uiz14.png'"></a>
+        </div>
+    </main>   
+    <!-- 底部  -->
+    <footer>
+        <ul>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">企业合作</a></li>
+            <li><a href="">人才招聘</a></li>
+            <li><a href="">讲师招聘</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">意见反馈</a></li>
+            <li><a href="">友情链接</a></li>
+        </ul>
+    </footer>
+    
+</body>
+<script src="js/bymyself.js"></script>
+</html>

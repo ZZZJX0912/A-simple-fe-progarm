@@ -1,0 +1,297 @@
+*{
+	margin:0px;
+	box-sizing:border-box;
+}
+
+
+ul, li, ol {
+    list-style: none;
+}
+
+
+@media(min-width: 1200px) {
+    .content{
+        width: 1170px;
+    }
+}
+@media(min-width: 992px){
+    .content{
+        width: 970px;
+    }
+}
+@media(min-width: 768px){
+    .content{
+        width: 750px;
+    }
+}
+
+body{
+    background-image: url(../img/bk.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+	margin:0 auto;
+	font-size:13px;
+	font-family:"微软雅黑";
+	line-height:normal;
+}
+ul{
+    list-style:none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+    /*头部*/
+header{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+    min-width: 1030px;
+}
+header>img{
+    float: left;
+    padding: 5px 65px;
+}
+header>ul>li{
+    float: left;
+    padding: 15px;
+    list-style: none;
+}
+header>ul{
+    z-index: 2;
+}
+
+header>ul>li a:link{
+    color: black;
+}
+header>ul>li a:visited{
+    color: black;
+}
+header>ul>li a:hover{
+    color: red;
+}
+
+.header_log{
+    float: right;
+    padding: 15px;
+    margin-right: 60px;
+    list-style: none
+}
+
+.header_login{
+    float: right;
+    padding: 15px;
+    list-style: none
+}
+
+._form{
+    padding: 10px 0px 10px 0px;
+    margin: 5px 30px 4px 0px;
+    float: right;
+    border-bottom: 1px #C8C8C8   solid;
+}
+
+._form input{ 
+    background-color: transparent;    /*input输入框的背景颜色变透明*/
+    font-size: 13px;
+	font-family:"微软雅黑";           
+    border: none;         /*去除显示的input输入边框  */
+    outline: medium;     /*去除点击input输入框的边框*/
+}
+
+.text{
+    margin: 0 60px 0 2px;
+}
+ 
+
+/*内容区*/
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.frontDiv{
+    position: relative;
+    margin: 20px 0 20px;
+    height: 460px;
+    width: 100%;
+}
+
+.inner_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.inner_ul{
+    width: 6200px;
+    position: absolute;
+    
+}
+.inner_ul>li{
+    float: left;
+}
+
+.inner_img::before{
+    clear: both;
+}
+
+.inner_img img{
+    height: 460px;
+    width: 1240px;
+    display: block;
+}
+
+
+.menuContent{
+    position: absolute;
+    float: left;
+    width: 216px;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.15);       /*背景透明，文字不透明*/
+}
+
+
+.link_box{
+    display: block;
+    background-color: rgba(0, 0, 0,0.15);
+    height: 14.285714285714286%;
+    width: 216px;
+    padding: 0 16px;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+.link_box span{
+    font-size: 14px;
+    color: white;
+
+}
+.link_box i{
+    line-height: 65px;
+    float: right;
+    color: white;
+}
+
+
+.menuContent_pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 460px;
+    width: 732px;
+}
+
+.menuContent_pic img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.link_box:hover{
+    background-color: rgba(0, 0, 0,0.30)
+}
+
+
+
+#frontFlip_left{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 44%;
+    left: -20px;
+    color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    z-index: 4;
+}
+#frontFlip_right{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin-right: -30px;
+    top: 44%;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    z-index: 4;
+}
+
+
+.lang_img{
+    position: relative;
+    width: 1250px;
+}
+
+.lang_img img{
+    width: 240px;
+    height: 120px;
+    border: none;
+    float: left;
+    transition: transform 0.5s;    /*实现缓慢上移*/
+}
+
+.lang_img img:hover{
+    box-shadow: 0px 0.5rem 2rem 0px rgba(48, 55, 66, 0.15);
+    transform: translateY(-5px);    /*实现上移*/
+}
+
+.propaganda{
+    margin: 0 39%;
+    z-index: 2;
+}
+
+.propaganda img{
+    margin: 15px;
+}
+
+#wechat{
+    position: relative;
+}
+
+#wechat::before{
+    position: absolute;
+    top: -240px;
+    left: -49px;
+    display: none;
+    z-index: 1;
+    content: url(../img/idx-btm.png);
+    width: 160px;
+    height: 208px;
+}
+
+#wechat:hover::before{
+    display: block;
+}
+/*底部*/
+
+footer{
+    margin: 0 auto 50px;
+    padding: 0px 230px;
+    width: 1200px;
+    height: 70px;
+    border-bottom:  1px #B8B8B8  solid;
+}
+
+footer>ul{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+footer a{
+    color: 	#B8B8B8;
+}
+
+footer>ul>li{
+    text-align: center;
+    padding: 15px;
+    float: left;
+    margin: 10px;
+    font-size: 12px;
+}
